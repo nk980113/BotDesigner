@@ -4,7 +4,7 @@ module.exports = {
     name: 'guildMemberAdd',
     async execute(member) {
         await (await member.client.channels.fetch(process.env.WELCOME_CHANNEL))
-            .send({ content: `<!@${member.id}> （${member.user.tag}）
+            .send({ content: `<@!${member.id}> （${member.user.tag}）
 > 進群後務必記得到 <#945319293577486337> 查看規則，
 > 並 ***至 <#1021370559667388446> 選取身分組*** 唷！`, embeds: [
                 new EmbedBuilder()
