@@ -5,7 +5,7 @@ const ID = process.env.ID;
 const TOKEN = process.env.TOKEN;
 
 const { Client, GatewayIntentBits, Partials, Collection } = require('discord.js');
-const client = new Client({ intents: [GatewayIntentBits.Guilds], partials: [Partials.Channel] });
+const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMembers], partials: [Partials.Channel] });
 
 const evntfiles = fs.readdirSync('./evnts').filter(file => file.endsWith(".js"));
 for (const file of evntfiles) {

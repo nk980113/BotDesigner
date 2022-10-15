@@ -18,6 +18,7 @@ module.exports = {
 也可以討論Discord機器人的製作、各類程式的設計經驗，
 若都不會的話也可以單純和大家聊天唷！`)
                     .setFooter(`伺服器名稱：${member.guild.name} | 伺服器人數： ${member.guild.memberCount}`)
+                    .setColor('#F8E71C')
             ] });
     }
 };
